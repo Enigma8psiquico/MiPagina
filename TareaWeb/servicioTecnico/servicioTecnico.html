@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Computadoras </title>
+	<link rel="stylesheet" type="text/css" href="../subEstilo.css">
+	<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+</head>
+<body>
+
+	<main style="background-color: black;">
+
+		<div class="lateral" >
+			
+			<a class="logo1" href="../index.html"><img class="logo" src="https://cdn.shopify.com/s/files/1/0597/0762/1572/files/COMPUTER_9ce7d8b0-6101-48a3-aa2d-adb41ee6d7de.png?v=1663784732"></a>
+			<style type="text/css">	
+				.logo {
+					background-color: #ebdbb2;
+					width: max(8%, 200px);
+				}
+				.logo img {
+					width: max(8%, 200px);
+				}	
+			</style>
+			<header style="">Categorias</header>
+			<ul class="menuVert">
+					<style type="text/css">
+						.menuVert{
+
+						}
+					</style>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="../computadoras/computadoras.html">Computadoras</a></li>
+					<li><a href="../Promociones/promociones.html">Impresoras</a></li>
+					<li><a href="../mobiles/mobiles.html">Mobiles</a></li>
+			</ul>
+		</div>
+
+	
+
+
+
+
+
+
+
+		<!-- Contenido -->
+
+		<div class="principal">
+
+			<h1 class="Titulos" >~ ⋄ CONTACTO ⋄ ~</h1>
+
+
+
+  <form style="background-color: #fbf1c7;">
+  	<style type="text/css">
+  		p {
+  			margin-bottom: 0px;
+  		}
+  	</style>
+  	<style type="text/css">
+  			
+  			:root {
+  				--ancho: 300px;
+  			}
+
+  			.caja-entrada {
+  				width: var(--ancho);
+  				border: 2px solid #fb4934;
+
+  			}
+
+  			.caja-entrada input {
+  				font-size: 20px;
+  				width: calc(var(--ancho) - 10px);
+  				height: auto;
+  				border: 0px;
+  			}
+
+  			.caja-entrada input:focus {
+  				outline: none;
+  			}
+
+  	</style>
+  	<script type="text/javascript">
+  		function cambioBorde(id) {
+  			var input = document.getElementById(id);
+  			input.style.border = "4px solid #689d6a"
+  		}
+  	</script>
+    <fieldset>
+    	<style type="text/css">
+    		fieldset {
+    			display: flex;
+    		}
+    	</style>
+      <legend> <strong>Datos Personales</strong></legend>     
+
+ 			<div align="left"> <!-- izquierdo-->
+ 				
+				<p>
+	        <label>Nombres:
+	        	<div class="caja-entrada" id="caja-entrada" onclick="cambioBorde(id)" value style="margin-top: 0px;" >
+	        		<input class="caja-entrada"  name="firstName" />
+	        	</div>
+	        </label>
+	      </p>
+	 
+			<p>
+	        <label>Apellidos: <br> 
+	        	<div class="caja-entrada" id="caja-entrada1" onclick="cambioBorde(id)" value style="margin-top: 0px;">
+	        		<input class="caja-entrada" name="lastName" />
+	        		</div>
+	        	</label>
+	    </p>
+   
+ 			<p>
+	        Genero : <br>
+	        <label><input type="radio" name="gender" value="male" /> Masculino</label>
+	        <label><input type="radio" name="gender" value="female" /> Femenino</label>
+	   	</p>
+	</div>
+	 
+	 
+	       
+	 	<div align="right">	 <!-- derecho -->
+			<p>
+	      <label>Email:
+	        	<div class="caja-entrada" id="caja-entrada2" onclick="cambioBorde(id) " value style="margin-top: 0px;">
+	        		<input class="caja-entrada" type="email" name="email" />
+	     	  	</div>
+				</label>
+	        		
+			</p>
+ 
+ 
+       
+ 
+		<p>
+        <label>Fecha de reclamo o consulta:
+        	<div class="caja-entrada" id="caja-entrada3" onclick="cambioBorde(id)" value style="margin-top: 0px;">
+        		<input class="caja-entrada" type="date" name="birthDate">
+        	</div>
+        </label>
+        		
+      </p>
+ 
+ 
+       
+ 
+		<p>
+        <label>
+          Acerca del problema:
+          <br>
+          <textarea class="caja-entrada" id="caja-entrada4" name="address" cols="30" rows="3" onclick="cambioBorde(id)"></textarea>
+        </label>
+      </p>
+ 
+ 
+       
+ 
+			<p>
+        <script type="text/javascript">
+        	function envio() {
+        		let mensaje = `<h2>Gracias por contactarnos. Tu consulta/reclamo ha sido recibido y lo estamos revisando. Te responderemos pronto. ¡Gracias por tu paciencia!</h2>`
+        		document.getElementById('mensaje-envio').innerHTML = mensaje
+        	}
+        </script>
+        <button class="boton-envio" type="button" id="boton-envio" onclick="envio()"><strong>Enviar</strong></button>
+      </p>
+ 	</div>
+
+	 	<div align="right" style="overflow: hidden;">
+	 		<style type="text/css">
+	 			.imagen {
+	 				max-width: 100%;
+	 				object-fit: cover;
+	 			}
+	 			.blur {
+	 				position: absolute;	
+	 				top: 0;
+	 				left: 0;
+	 				right: 100%;
+	 				bottom: 100%;
+	 				filter: blur(5px);
+	 				mix-blend-mode: multiply;
+ 				}
+ 			</style>
+		
+ 			<img class="imagen" src="comodore.jpg">
+ 		</div>
+ 
+     </fieldset>
+ 			<div align="bottom" id="mensaje-envio"> <h4></h4></div>
+		<div class="contenedor-wadap">
+				<style type="text/css">
+				.contenedor-wadap {
+					align-items: flex-end;
+					font-size: 24px;
+				}
+				.contenedor-wadap img {
+					width: 450px;
+				}
+
+			</style>
+			<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260.88381004494113!2d-78.59196345281495!3d-9.076122929881246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab8114d07781c1%3A0x50c3d574d0b44287!2sCOMPUTER%20HOUSE%20Chimbote!5e0!3m2!1ses!2spe!4v1682016066647!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<img style="width:100%" src="https://cdn.shopify.com/s/files/1/0597/0762/1572/files/3_9321034d-c056-4199-9b7f-45d06d7f675c.png?v=1671234479">
+			<h2 class="Titulos" style="background-color: #282828; color: #bdae93;">~ ⋄ REFERENCIA ⋄ ~</h2>
+			<img class="referencia" src="../captura.jpeg"><br>
+			<style type="text/css">
+				img.referencia {
+					width: 100%;
+					height: 800px;
+				}
+			</style>
+
+	
+	
+		</div>			  
+	</form>
+
+	</div>
+
+	</main>
+
+</body>
+<footer>
+	<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Footer Ejemplo</title>
+	<style>
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.footer a {
+			color: #fff;
+		}
+
+		.footer p {
+			margin: 0;
+		}
+
+		.footer__contacto {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<footer class="footer">
+		<div class="footer__contacto">
+				<p>Correo electrónico: <a href="mailto:contacto@tutienda.com">contacto@tutienda.com</a></p>
+				<p>Teléfono: 123-451-7890</p>
+		</div>
+			<p>Nos puedes encontrar aquí: <a href="https://www.google.com/maps">https://www.google.com/maps</a></p>
+			<p>Somos una tienda de computadoras comprometida con ofrecer productos y servicios de calidad.</p>
+	</footer>
+</body>
+</html>
+
+
+
+		--->
+</footer>
+
+
+</html>
+
+

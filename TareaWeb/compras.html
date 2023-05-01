@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Computadoras </title>
+	<link rel="stylesheet" type="text/css" href="estilo_principal.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<script type="text/javascript" src="prueba.js"></script>
+</head>
+<body>
+
+	<main style="background-color: black;">
+
+		<div class="lateral" >
+			
+			<a class="logo1" href="../index.html"><img class="logo" src="https://cdn.shopify.com/s/files/1/0597/0762/1572/files/COMPUTER_9ce7d8b0-6101-48a3-aa2d-adb41ee6d7de.png?v=1663784732"></a>
+			<style type="text/css">	
+				.logo {
+					background-color: #ebdbb2;
+					width: max(8%, 200px);
+				}
+				.logo img {
+					width: max(8%, 200px);
+				}	
+			</style>
+			<header style="">Categorias</header>
+
+		<nav class="enlaces" align = right>
+			<li style="margin-bottom: 6px">
+				<style type="text/css">
+					li {
+						display: flex;
+					}
+				</style>
+				<a href="index.html" style="color: #ec6762; border: 3px solid #ff0000; background-color: black;" >Inicio</a>
+				<a href="Promociones/promociones.html">Impresoras</a>
+				<a href="mobiles/mobiles.html">Mobiles</a>
+			</li>
+			<li>
+				<a href="computadoras/computadoras.html">Computadoras</a>
+				<a href="servicioTecnico/servicioTecnico.html">Contactanos</a>
+			</li>
+
+		</nav>
+
+	
+
+
+
+
+
+
+
+		<!-- Contenido -->
+
+		<div class="principal">
+			<h1 class="Titulos" style="background-color: #282828; color: #bdae93;">~ ⋄ Pedido ⋄ ~</h1>
+
+			  	<style type="text/css">
+  		p {
+  			margin-bottom: 0px;
+  		}
+  	</style>
+  	<style type="text/css">
+  			
+  			:root {
+  				--ancho: 300px;
+  			}
+
+  			.caja-entrada {
+  				width: var(--ancho);
+  				border: 2px solid #fb4934;
+
+  			}
+
+  			.caja-entrada input {
+  				font-size: 20px;
+  				width: calc(var(--ancho) - 10px);
+  				height: auto;
+  				border: 0px;
+  			}
+
+  			.caja-entrada input:focus {
+  				outline: none;
+  			}
+
+  	</style>
+  	<script type="text/javascript">
+  		function cambioBorde(id) {
+  			var input = document.getElementById(id);
+  			input.style.border = "4px solid #689d6a"
+  		}
+  	</script>
+    <fieldset>
+    	<style type="text/css">
+    		fieldset {
+    			display: flex;
+    		}
+    	</style>
+      <legend> <strong>Datos Personales</strong></legend>     
+
+ 			<div align="left"> <!-- izquierdo-->
+ 				
+				<p>
+	        <label>Nombres:
+	        	<div class="caja-entrada" id="caja-entrada" onclick="cambioBorde(id)" value style="margin-top: 0px;" >
+	        		<input class="caja-entrada"  name="firstName" />
+	        	</div>
+	        </label>
+	      </p>
+	 
+			<p>
+	        <label>Apellidos: <br> 
+	        	<div class="caja-entrada" id="caja-entrada1" onclick="cambioBorde(id)" value style="margin-top: 0px;">
+	        		<input class="caja-entrada" name="lastName" />
+	        		</div>
+	        	</label>
+	    </p>
+   
+ 			<p>
+	        Genero : <br>
+	        <label><input type="radio" name="gender" value="male" /> Masculino</label>
+	        <label><input type="radio" name="gender" value="female" /> Femenino</label>
+	   	</p>
+	</div>
+	 
+	 
+	       
+	 	<div align="right">	 <!-- derecho -->
+			<p>
+	      <label>Email:
+	        	<div class="caja-entrada" id="caja-entrada2" onclick="cambioBorde(id) " value style="margin-top: 0px;">
+	        		<input class="caja-entrada" type="email" name="email" />
+	     	  	</div>
+				</label>
+	        		
+			</p>
+        
+ 
+			<p>
+        <script type="text/javascript">
+        	function envio() {
+        		let mensaje = `<h2>Gracias por contactarnos. Tu consulta/reclamo ha sido recibido y lo estamos revisando. Te responderemos pronto. ¡Gracias por tu paciencia!</h2>`
+        		document.getElementById('mensaje-envio').innerHTML = mensaje
+        	}
+        </script>
+        <!--button class="boton-envio" type="button" id="boton-envio" onclick="envio()"><strong>Enviar</strong></button-->
+      </p>
+ 	</div>
+
+
+			<style type="text/css">
+				.principal {
+					background-color: #ebdbb2;
+					width: 1850px;
+					
+
+					justify-content: space-between;
+					flex-wrap: wrap;
+
+				}
+				.principal div {
+					flex-wrap: wrap;
+					margin: 10px;
+				}
+			</style>
+
+			<style type="text/css">
+				.titulos img {
+
+				}
+			</style>
+
+				<div class="casilla_producto">
+					<style type="text/css">
+						.casilla_producto {
+							width: 1500px	;
+						}
+					</style>
+
+					<h1 style="color: #689d6a"> Usted esta a pundo de comprar: </h1>
+					<h2 style="color: #fbf1c7;"> Producto: </h2><h3>
+						Todo en uno HP 24-CB1007LA, Core i5-12...
+					</h3>
+
+					<h2 style="color: #fbf1c7"> Precio: </h2>
+					<h4> s/ 2210.00</h4>
+
+					<button style="width: 200px; height: 40px" id="pedir" onclick="pedir(´´)"> Pedir </button>					
+
+				</div>
+				<div class="casilla_producto caja">
+					<style type="text/css">
+						.caja {
+							width: 400px;
+						}
+					</style>
+					<img style="width: 350px; height: 350px;" src="https://cdn.shopify.com/s/files/1/0597/0762/1572/products/LAPTOPSLENOVO_1_6c626a3d-bf3c-48be-a939-f9b09c3d8002.png?v=1680368090">
+					
+				</div>
+				<script type="text/javascript">
+					function pedir() {
+						var mensaje = `Estamos haciendo el pedido, en unos`
+						document.getElementById('contenedor-pedido').innerHTML = mensaje ;
+					}
+				</script>
+				<div style="width: 100%; height: 100%" id="contenedor-pedido"></div>
+
+
+	</div>
+
+
+
+	</main>
+</body>
+<footer style="background: black;height: 100%;" >
+	 
+		
+</footer>
+
+
+</html>

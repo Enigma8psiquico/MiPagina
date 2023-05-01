@@ -1,0 +1,91 @@
+:root {
+  	
+
+  	--color-links:#187498; /* color medio azulado con tono de verde */
+  	--color-fondo2: #bfd7c7; /* un poco intenso pero suave */ 
+  	--color-fondo1: #f4f9f6; /* casi blanco */
+  	--color-fondo: #d6e7dd; /* este suave claro verde */
+  	--color-fondo-casilla: #bfd7dd; /* este es muy intenso casi azuladito */
+  	--color-azulado-oscurito: #076678; 
+  	--color-rojito: #fb4943;
+  	--color-blanco-cremita: #faf8f1;
+  	--color-borde: ;
+  }
+
+.cuerpo {
+	background-image: url("fondo.jpeg");
+}
+
+
+.header_menu {
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+	width: 99.5%;
+	margin: 16px auto;
+	justify-content: space-between;
+	align-items: center;
+	/*padding: 1%;*/
+	height: 80px;
+	background-color: var(--color-blanco-cremita);
+	display: flex;
+	
+}
+.enlaces {
+	max-width: auto;
+}
+
+.enlaces a {
+	--margen-ancho: 30px;
+	
+	font-size: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: var(--margen-ancho);
+	padding-right: var(--margen-ancho);
+	text-decoration: none;
+	margin-left: var(--margen-ancho);
+	margin-right: var(--margen-ancho);
+	border-radius: 5px;
+	transition: all .2s ease-in-out;
+	background-color: transparent;
+	color: var(--color-links);
+	border: 3px solid var(--color-fondo-casilla);
+	border-radius: 4px;
+
+}
+
+.enlaces a:hover {
+	background-color: var(--color-fondo2);
+	color: #0f4392;
+	border: 3px solid #0f4392;
+}
+
+.saludo {
+	background-color: var(--color-fondo1);
+	font-size: 23px;
+	font-family: monospace ;
+	border-radius: 10px;
+	font-weight: bolder;
+	margin: 0;
+	padding-left: 2%;
+	max-width: 500px;
+	color: var(--color-azulado-oscurito);
+}
+
+.navbar {
+	border: 3px solid red;
+	padding-block: 0px 0px !important;
+	border-radius: 10px;
+	background-color: var(--color-blanco-cremita);
+	/*margin-left: 110px;*/
+}
+.logo {
+	height: 100px;
+	border-radius: 10px;
+}
+
+/* Color de los contenedores de productos en stok */
+.contenedor-stok {
+	background-color: var(--color-links);
+	color: var(--color-fondo1);
+}
+

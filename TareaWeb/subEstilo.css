@@ -1,0 +1,108 @@
+:root {
+  --color-links:#187498;
+  --color-fondo2: #bfd7c7; /* un poco intenso pero suave */ 
+  --color-fondo1: #f4f9f6; /* casi blanco */
+  --color-fondo: #d6e7dd; /* este si */
+  --color-fondo-casilla: #bfd7dd; /* este es muy intenso casi azuladito */
+
+  --color-links: #187498;
+}
+body {
+  margin: 0px;
+  background-color: #fcffe7; /* color de fondo de la barra lateral */
+}
+
+@charset "utf-8";
+html{
+  height:100%;
+}
+main{
+  width: 80%;
+  height: 100%;
+  margin:0 auto;
+  display: contents;
+}
+.lateral{
+  box-sizing: border-box;
+  width: max(8%, 200px);
+  display: inline-block;
+  position: fixed; 
+}
+.principal {
+  background-image: url("fondo.jpeg");
+  margin-left: max(10%, 200px);
+  padding: 0 10px;
+  height: auto;
+
+  
+
+}
+/*Hasta aquí ya tenemos un menu lateral fijo,
+ahora viene ponerlo bonito*/
+.lateral header{
+  color: black; /* aqui va el foreground de Categorias */
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid #076678; /* aqui va el color de borde de Categorias */
+  margin-top: 4px;
+
+}
+.lateral ul{
+  list-style:none;
+  padding-left:0;
+  margin-top:0;
+}
+.lateral ul li{
+  display:block;
+  position: relative;
+  padding: 8px 10px;
+  margin-left:0;
+  border-bottom:2px solid #fb4943 /* color de borde de los links */
+}
+.lateral ul li a{ 
+  color: var(--color-links); /* color de las letras de los links */
+
+  text-decoration:none;
+}
+.lateral ul li a:after{
+  content: ' ';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+.lateral ul li:hover, .lateral ul li:hover a{
+  background: #b8bb26;
+  color: #282828; /* color de links cuando se pasa el cursor encima */
+}
+
+
+/* Aqui abajo van las configuraciones de la parte del contenido de los productos */
+.principal {
+  background-color:var(--color-fondo); /* background de el contenido */
+  width: auto;
+  max-width: 1500px;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.principal div {
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+
+
+.Titulos { /* Aqui va la configuracion de los titulos */
+  background-color: rgba(214, 231, 221, 0.6);
+  /*backdrop-filter: blur(5px);*/
+  width: 53%;
+  color: var(--color-links);
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+

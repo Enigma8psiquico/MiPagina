@@ -1,0 +1,130 @@
+:root {
+	--max-tamaño: 300px;
+	
+}
+
+
+
+
+body {
+	font-size: 25px;
+}
+
+
+.entradada {
+	border: 2.5px solid;
+	font-size: 25px;
+	width: 500px;
+	height: 50px;
+	border-radius: 3px;
+	margin-left: 100px;
+	background: #001135;
+	border-color: gray;
+	color: white;
+
+}
+
+.entradada:hover {
+	border-color: white;
+}
+
+
+.contaier {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.cajita-check {
+	--tamaño: 18px;
+	width: var(--tamaño);
+	height: var(--tamaño);
+}
+
+.boton {
+	padding: 10px;
+	font-size: 20px;
+	background-color: hsl(0, 0%, 100%, .1);
+	color: white;
+	border-radius: 3px;
+	border: 0px;
+	margin-left: 100px;
+	margin-top: 30px;
+
+}
+
+.boton :hover {
+
+}
+
+
+:root {
+	--bordes: 10px;
+  	--color-links:#187498;
+  	--color-fondo2: #bfd7c7; /* un poco intenso pero suave */ 
+  	--color-fondo1: #f4f9f6; /* casi blanco */
+  	--color-fondo: #d6e7dd; /* este suave claro verde */
+  	--color-fondo-casilla: #bfd7dd; /* este es muy intenso casi azuladito */
+
+}
+
+.casilla_producto {
+	color: black;
+	font-size: 16px;
+	display: inline-block;
+	background-color: var(--color-fondo-casilla);
+	border: 3px solid #36ae7c;
+	border-radius: var(--bordes);
+	padding: 10px;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+}
+
+.casilla_producto img {
+	--tamaño: 300px ;
+	height: var(--tamaño);
+	width: var(--tamaño);
+	border-radius-top: var(--bordes);
+	border-block: border-box;
+}
+
+.casilla_producto font {
+	margin: 10px;	
+}
+
+
+.comprar {
+	background-color: #008CBA; /* color de fondo de los botones */ 
+  	border: none;
+  	font-family: monospace;
+  	color: white;
+  	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+.comprar:hover{
+	background: #b8bb2f;
+	color: #282828;
+  	font-weight: 9000;
+  	cursor: pointer;
+
+}
+
+.boton-envio {
+	border: 2px solid #b8bb26;
+	font-size: 16px;
+	color: #1d2021;
+	background-color: #98971a;
+	width: 100px;
+	height: 30px;
+	
+}
+
+.boton-envio:hover {
+	background-color: #d79921;
+}
+
